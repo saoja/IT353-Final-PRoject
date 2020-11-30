@@ -1,0 +1,17 @@
+#Topofpage{
+  background-color: rgba(255, 0, 0, 0.5);
+
+}
+#navtab{
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 160px;
+    border: 1px solid
+
+
+}
+#search{
+position: relative;
+top: -120px;
+left: 180px;
+
+}

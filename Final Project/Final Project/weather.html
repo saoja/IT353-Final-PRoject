@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title> Morning Rutine</title>
+    <link rel="stylesheet" href="weather.css">
+
+    <div id="Topofpage">
+    <h1>Weather</h1>
+    <p><b>Current weather information</b></p>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </div>
+  </head>
+  <body>
+    <div id="navtab">
+
+      <a href="main.html">Main Page</a>
+      <p></p>
+      <a href="weather.html">Weather</a>
+      <p></p>
+      <a href="todo.html">To Do List</a>
+      <p></p>
+      <a href="schedule.php">Schedule</a>
+      <p></p>
+
+    </div>
+    <div id="search">
+      <h2>Get Current weather</h2>
+      <input type="text" name="city" id="city" placeholder= "Enter City Name">
+      <button id="searchbutton">Search</button>
+
+    </div>
+<div id="show">
+
+</div>
+    <div id="weather">
+      <script>
+        $(document).ready(function(){
+          $("#searchbutton").click(function(){
+            var city= $("#city").val();
+            var key= '5f4dc7fbf614bb07ab9f036e608b8b12';
+            $.ajax({
+              url:'http://api.openweathermap.org/data/2.5/weather',
+              dataType:'json',
+              type:'GET',
+              data:{q:city,appid: key, units: 'metric'},
+
+              success: function(data){
+                var wf ='<h2>';
+                $.each(data.weather,function(index,val){
+                  wf += '<p><b>'+ data.name+"</b></p>"+ data.main.temp+'&deg;C'+'|'+val.description
+                });
+                wf+='</h2>'
+                $("#show").html(wf);
+              }
+            });
+          });
+        });
+      </script>
+    </div>
+
+
+  </body>
+</html>
