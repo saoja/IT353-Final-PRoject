@@ -8,6 +8,8 @@ for (index = 0; index < createList.length; index++) {
   newSpan.className = "close";
   newSpan.appendChild(textNode);
   createList[index].appendChild(newSpan);
+
+
 }
 var closeButton = document.getElementsByClassName("close");
 //removes items from list when clicking the onclick method
