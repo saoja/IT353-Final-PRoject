@@ -4,6 +4,19 @@ body {
   background-color: #e6e4e3;
 }
 
+#navtab{
+  background-color: rgba(255, 0, 0, 0.5);
+  float: left;
+  padding:10px;
+  border-radius: 10px;
+}
+
+
+h2{
+  border-radius: 25px;
+}
+
+
 
 h3{
   background-color: #a6a6a6;
@@ -32,7 +45,7 @@ h3{
 input {
   margin: 0;
   border: none;
-  border-radius: 0;
+  border-radius: 25px;
   width: 75%;
   padding: 10px;
   float: left;
@@ -48,7 +61,8 @@ input {
   float: left;
   text-align: center;
   cursor:pointer;
-  border-radius: 0;
+  border-radius: 15px;
+  float: right;
 }
 
 .createButton:hover{

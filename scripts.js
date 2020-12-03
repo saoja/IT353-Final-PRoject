@@ -11,6 +11,7 @@ for (index = 0; index < createList.length; index++) {
 }
 var closeButton = document.getElementsByClassName("close");
 //removes items from list when clicking the onclick method
+//styled to be an x
 
 for (i = 0; i < closeButton.length; i++) {
   closeButton[i].onclick = function() {
@@ -18,14 +19,14 @@ for (i = 0; i < closeButton.length; i++) {
     theDiv.style.display = "none";
   }
 }
-//creates the elements for the todo function
+//creates the elements for the todo list function
 function createNewElement() {
   var li = document.createElement('li');
   var userInput = document.getElementById("input").value;
   var textNode = document.createTextNode(userInput);
   li.appendChild(textNode);
 
-  //tells user to try again
+  //prompt to tell user his entry isnt valid.
   if (userInput === '') {
     alert("Try Again! Add items to your list!")
   } else {
@@ -33,6 +34,8 @@ function createNewElement() {
     document.getElementById("todo").appendChild(li);
   }
 
+
+//gets userInput and creates new list items
   document.getElementById("input").value = "";
   var closeTag = document.createElement("SPAN");
   var text2 = document.createTextNode("\u00D7");
@@ -60,4 +63,5 @@ ulList.addEventListener('click', function(event) {
 
 }, false);
 
+//calls the function
 createNewElement();
