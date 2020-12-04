@@ -1,0 +1,25 @@
+#Topofpage{
+  background-color: rgba(255, 0, 0, 0.5);
+
+}
+#navtab{
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 160px;
+    border: 1px solid
+
+
+
+}
+#week{
+position: relative;
+top: -120px;
+left: 180px;
+border: 1px solid;
+}
+
+#Addeventform{
+  background-color: lightgrey;
+}
+#addevent{
+  background-color: lightgrey;
+}

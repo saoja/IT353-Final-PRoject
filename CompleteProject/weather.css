@@ -1,0 +1,31 @@
+#Topofpage{
+  background-color: rgba(255, 0, 0, 0.5);
+  padding-left: 10px;
+
+}
+#navtab{
+    background-color: rgba(255, 0, 0, 0.5);
+    padding-left: 10px;
+    margin: left;
+    width: 160px;
+    border: 1px solid
+
+
+}
+#search{
+position: relative;
+top: -120px;
+left: 180px;
+
+}
+#weather{
+  background-color: rgba(0, 0, 100, 0.1);
+  margin: auto;
+   width: 60%;
+   padding: 10px;
+   border: 2px solid
+
+}
+body{
+      background-color: rgba(0, 0, 0, 0.05);
+}
